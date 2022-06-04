@@ -20,7 +20,7 @@
     <a class="nave" href="{% url 'store:home' %}">Home</a>
     <a class="nave" href="{% url 'store:product-list' %}">Products</a>
     <a class="nave" href="{% url 'store:category-list' %}">Categories</a>
-    <a class="nave" href="{% url 'store:category-list' %}">Your orders</a>
+    <a class="nave" href="{% url 'store:order-list' %}">Your orders</a>
     {% if request.session.cart_id %}
         <a style="float: right;" href="{% url 'store:cart-detail' request.session.cart_id %}">Go to cart</a>
     {% endif %}
